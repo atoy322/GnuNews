@@ -1,5 +1,5 @@
 # King Gnu news getter
-
+---
 
 ## Requirements
 <li>Python 3</li>
