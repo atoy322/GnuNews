@@ -1,6 +1,8 @@
 # King Gnu news getter
 ---
 
+This program collects king gnu news from [official site](https://kinggnu.jp/news).
+
 ## Requirements
 <li>Python 3</li>
 <li>requests</li>
