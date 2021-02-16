@@ -12,6 +12,9 @@ PATTERN_STRING = '<a class="news-archive-preview__StyledLink-sc-19ik15e-1 cwSwjn
 
 
 def GetNews():
+    """
+    サイトからニュースを取得してリストで返す。
+    """
     page = requests.get(URL).content.decode()
     found_list = re.findall(PATTERN_STRING, page)
     news_list = map(lambda x: re.sub("<.+?>", "", x), found_list)  # "<h1>Hello</h1>" -> "Hello"
@@ -24,8 +27,8 @@ if __name__ == "__main__":
         "「.+」": "CYAN",
         "[0-9]+?月[0-9]+?日": "GREEN",
         "常田大希|井口理|新井和輝|勢喜遊": "YELLOW"
-    }
-    LIGHTBLACK = "\x1b[100m"
+    }  # Pattern: Color
+    LIGHTBLACK = "\x1b[100m"  # background color
     END = "\x1b[49m"
 
     news_list = GetNews()
