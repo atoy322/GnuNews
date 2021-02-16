@@ -2,7 +2,6 @@
 ---
 
 これは、[公式サイト](https://kinggnu.jp/news)からKing Gnu の ニュースを取得して一覧表示するプログラムです。
-King Gnu について ⇒ [https://kinggnu.jp/](https://kinggnu.jp/)
 
 ## Requirements
 <li>Python 3</li>
