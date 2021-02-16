@@ -27,5 +27,8 @@ in python interpreter or .py file
 >>> GetNews()  # return list of news.
 ```
 
+## Screenshot
+![screenshot](./screenshot/img.png)
+
 ## License
 ##### MIT License
