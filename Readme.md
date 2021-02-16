@@ -1,8 +1,8 @@
 # King Gnu news getter
 ---
 
-##### This program collects king gnu news from [official site](https://kinggnu.jp/news).
-##### About king gnu -> [https://kinggnu.jp/](https://kinggnu.jp/)
+これは、[公式サイト](https://kinggnu.jp/news)からKing Gnu の ニュースを取得して一覧表示するプログラムです。
+King Gnu について ⇒ [https://kinggnu.jp/](https://kinggnu.jp/)
 
 ## Requirements
 <li>Python 3</li>
