@@ -15,20 +15,21 @@ $ git clone https://github.com/atoy322/GnuNews.git
 cd GnuNews
 ```
 
-in terminal
+### in terminal
 ```shell
 $ python3 gnu.py
 ~ List of news ~
 ```
 
-in python interpreter or .py file
+##### Screenshot
+![screenshot](./screenshot/img.png)
+
+### in python interpreter or .py file
 ```python
 >>> from gnu import GetNews
 >>> GetNews()  # return list of news.
 ```
 
-## Screenshot
-![screenshot](./screenshot/img.png)
 
 ## License
 ##### MIT License
