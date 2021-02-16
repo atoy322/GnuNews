@@ -1,31 +1,14 @@
 import re
 
 import requests
-import colorama
-from termcolor import cprint
 
-
-colorama.init()
+from color import cprint
 
 
 URL = "https://kinggnu.jp/news"
 PATTERN_STRING = '<a class="news-archive-preview__StyledLink-sc-19ik15e-1 cwSwjn".+?</a>'
 
 
-def colored_print(pattern, color, text, default="white", background="grey"):
-    match_objects = list(re.finditer(pattern, text))
-    now_color = default
-
-    for idx, char in enumerate(text):
-        for match_object in match_objects:
-            if idx == match_object.start():
-                now_color = color
-            elif idx == match_object.end():
-                now_color = default
-        
-        cprint(char, now_color, "on_" + background, end="")
-    
-    print()
 
 
 def GetNews():
@@ -36,9 +19,18 @@ def GetNews():
 
 
 
-
 if __name__ == "__main__":
+    color_table = {
+        "「.+」": "CYAN",
+        "[0-9]+?月[0-9]+?日": "GREEN",
+        "常田大希|井口理|新井和輝|勢喜遊": "YELLOW"
+    }
+    LIGHTBLACK = "\x1b[100m"
+    END = "\x1b[49m"
+
     news_list = GetNews()
 
-    for i in news_list:
-        colored_print("「.+」", "cyan", "◦ "+i)
+    for idx, i in enumerate(news_list):
+        if idx % 2: l = r = ""
+        else: l, r = LIGHTBLACK, END
+        cprint(l+"◦ "+i+r, color_table=color_table)
