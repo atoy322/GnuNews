@@ -12,7 +12,7 @@
 
 ```shell
 $ git clone https://github.com/atoy322/GnuNews.git
-cd GnuNews
+$ cd GnuNews
 ```
 
 ### in terminal
