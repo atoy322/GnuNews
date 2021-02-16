@@ -7,7 +7,6 @@
 <li>Python 3</li>
 <li>requests</li>
 <li>colorama</li>
-<li>termcolor</li>
 
 ## Usage
 
