@@ -21,7 +21,6 @@ def GetNews():
     return list(news_list)
 
 
-
 if __name__ == "__main__":
     color_table = {
         "「.+」": "CYAN",
